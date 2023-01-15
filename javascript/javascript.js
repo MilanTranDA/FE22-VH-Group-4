@@ -11,3 +11,7 @@ let hq_marker = L.marker([55.598778, 13.010495], 13).addTo(myMap);
 
 hq_marker.bindPopup("<b>HQ</b>");
 
+// Submit popup:
+function submitConfirm(){
+	alert("Thank you for your submition!")
+}
