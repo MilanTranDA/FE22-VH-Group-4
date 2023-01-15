@@ -1,4 +1,4 @@
-let myMap = L.map("map").setView([37.61, -122.011], 10);
+let myMap = L.map("map").setView([55.598778, 13.010495], 13);
 
 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
@@ -7,3 +7,6 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 	maxZoom: 20
 }).addTo(myMap);
 
+let hq_marker = L.marker([55.598778, 13.010495], 13).addTo(myMap);
+
+hq_marker.bindPopup("<b>HQ</b>");
