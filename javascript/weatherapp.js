@@ -3,6 +3,13 @@ buttonForSearch.addEventListener('click',searchForWeather);
 const mainContainerToshowWeather = document.querySelector('#mainContainerToshowWeather');
 const error = document.querySelector('#errorParagraf');
 
+
+function performinitialSearch(){
+    fetchfunction('Malmö');
+
+}
+performinitialSearch();
+
 function searchForWeather(event) {
     event.preventDefault();
     const inputSearchBox = document.querySelector('#searchinput');
@@ -32,13 +39,13 @@ fetch(fetchUrl)
 
 function showWeatherData(apiData) {
  console.log(apiData)
+ mainContainerToshowWeather.innerHTML = '';
+ error.innerText = '';
+
 
  const smalleContainerShowingWeather  = document.createElement ('div');
  mainContainerToshowWeather.appendChild(smalleContainerShowingWeather);
  smalleContainerShowingWeather.classList.add("smallContainerForWeather")
-
- smalleContainerShowingWeather.innerHTML = '';
- error.innerText = '';
 
  const cityName = document.createElement('h3');
  smalleContainerShowingWeather.appendChild(cityName);
