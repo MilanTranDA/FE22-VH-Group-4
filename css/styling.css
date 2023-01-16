@@ -1,3 +1,17 @@
+.background-styling{
+    background-color: #28AEFB ;
+}
+
+  
+
+form, .hero-image, #Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 #preloader {
     position: fixed;
     top: 0;
