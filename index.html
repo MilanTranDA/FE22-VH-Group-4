@@ -12,70 +12,73 @@
     <title>WeatherFeather</title>
     <script src="/javascript/weatherapp.js" defer></script>
     <script src="/javascript/preloader.js" defer></script>
+
 </head>
 
-<body>
+<body class="background-styling">
     <div id="preloader">
         <img src="/images/preloader.gif" alt="">
     </div>
     <div id="main-content">
-    <nav class="navbar navbar-expand bg-warning fs-5">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/sun.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"></a>
+        <nav class="navbar navbar-expand bg-warning fs-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/sun.svg" alt="Logo" width="30" height="30"
+                        class="d-inline-block align-text-top"></a>
 
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Start</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sida2.html">Map Forecast</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Start</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sida2.html">Map Forecast</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Toppen av sidan, hero-img -->
+
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>Welcome to WeatherFeather.com</h1>
+                <p>Conquering the weather business by storm</p>
             </div>
         </div>
-    </nav>
 
-    <!-- Toppen av sidan, hero-img -->
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1>Welcome to WeatherFeather.com</h1>
-            <p>Conquering the weather business by storm</p>
+        <!-- APi -->
+        <div id="weather-container">
+            <form>
+                <input type="text" id="text" placeholder="Location" checked>
+                <button id="btn">Search</button>
+            </form>
+            <div id="Container">
+            </div>
         </div>
     </div>
 
-    <!-- APi -->
-    <div id="weather-container">
-        <form>
-            <input type="text" id="text" value="Malmö" checked>
-            <button id="btn"> Hello</button>
-        </form>
-        <div id="Container">
-        </div>
-    </div>
-
-    <footer>
+    <footer class="navbar fixed-bottom navbar-light bg-light" id="footer">
         <div class="contacts">
             <h4>Contact Info:</h4>
             <p>Email: lorem@gmail.com</p>
             <p>Phone: 123 456 78 90</p>
-        </div>
-
-        <div class="copyright">
-            © 2023 Copyright:
-            <a class="länk"
-                href="https://blogg.loppi.se/avhelamitthjarta/files/2013/03/ajabaja-horz.jpg">Grupp4Läxa.com</a>
+            <div class="copyright">
+                © 2023 Copyright:
+                <a class="länk"
+                    href="https://blogg.loppi.se/avhelamitthjarta/files/2013/03/ajabaja-horz.jpg">Grupp4Läxa.com</a>
+            </div>
+            
         </div>
     </footer>
-</div>
 </body>
 
 <!-- Bootstrap är kopplat för navbar på alla sidor + picture cards på "about" -->
