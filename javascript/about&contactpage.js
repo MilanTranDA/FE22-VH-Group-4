@@ -14,4 +14,3 @@ hq_marker.bindPopup("<b>HQ</b>");
 function submitConfirm(){
 	alert("Thank you for your submition!")
 }
-
