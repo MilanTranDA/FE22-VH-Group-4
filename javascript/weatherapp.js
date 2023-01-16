@@ -1,14 +1,15 @@
 const buttonForSearch = document.querySelector('#buttonForSearchInput');
 buttonForSearch.addEventListener('click',searchForWeather);
-const mainContainerToshowWeather = document.querySelector('#mainmainContainerToshowWeatherForWeatherapp');
+const mainContainerToshowWeather = document.querySelector('#mainContainerToshowWeather');
+const error = document.querySelector('#errorParagraf');
 
 function searchForWeather(event) {
     event.preventDefault();
     const inputSearchBox = document.querySelector('#searchinput');
     const inputSearchBoxValue = inputSearchBox.value;
     inputSearchBoxValue.value = '';
-
-        console.log(inputSearchBoxValue)
+    
+    console.log(inputSearchBoxValue)
     fetchfunction(inputSearchBoxValue);
 }
 
@@ -26,7 +27,7 @@ fetch(fetchUrl)
         }
     })
     .then(showWeatherData)
-    .catch()
+    .catch(showErrorMessage)
 }
 
 function showWeatherData(apiData) {
@@ -35,6 +36,9 @@ function showWeatherData(apiData) {
  const smalleContainerShowingWeather  = document.createElement ('div');
  mainContainerToshowWeather.appendChild(smalleContainerShowingWeather);
  smalleContainerShowingWeather.classList.add("smallContainerForWeather")
+
+ smalleContainerShowingWeather.innerHTML = '';
+ error.innerText = '';
 
  const cityName = document.createElement('h3');
  smalleContainerShowingWeather.appendChild(cityName);
@@ -63,12 +67,16 @@ function showWeatherData(apiData) {
 
 
 const WeatherIcon = apiData.weather[0].icon;
-
  const imageUrl = `http://openweathermap.org/img/wn/${WeatherIcon}@2x.png`
  const showWeatherIconImage = document.createElement('img');
  smalleContainerShowingWeather.appendChild(showWeatherIconImage);
  showWeatherIconImage.src = imageUrl;
  showWeatherIconImage.classList.add('weatherIcon')
 
+}
 
+
+function showErrorMessage(errorMessage) {
+    error.innerText = errorMessage;
+    smalleContainerShowingWeather.innerHTML = '';
 }
