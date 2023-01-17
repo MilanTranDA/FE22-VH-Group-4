@@ -8,6 +8,34 @@
     --clr-weather-blue: #35ABED;
 }
 
+body{
+    font-family: sans-serif;
+    background-color: var(--clr-weather-blues);   
+}
+
+.background-styling{
+    background-color: var(--clr-weather-blue);
+}
+form, .hero-image, .Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.Container{
+    background-color: var(--clr-weather-blue);
+    color: var(--clr-light-1000);
+    
+}
+
+.weatherIcon{
+    position: relative;
+    top: -120px;
+    right: -170px;
+}
+
 /* Preloader Gif */
 #preloader {
     position: fixed;
