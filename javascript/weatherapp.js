@@ -49,7 +49,7 @@ function showWeatherData(apiData) {
 
     const cityName = document.createElement('h3');
     smalleContainerShowingWeather.appendChild(cityName);
-    cityName.innerText = 'Weather in ' + apiData.name;
+    cityName.innerText =  apiData.name;
     cityName.classList.add("cityName")
 
     const weatherDescription = document.createElement('h5');
@@ -59,18 +59,24 @@ function showWeatherData(apiData) {
 
     const temperatureCelcius = document.createElement('h3');
     smalleContainerShowingWeather.appendChild(temperatureCelcius);
-    temperatureCelcius.innerText = apiData.main.temp + ' °C';
+    temperatureCelcius.innerText = apiData.main.temp;
     temperatureCelcius.classList.add("temperatureCelcius")
 
     const temperatureMax = document.createElement('h5');
     smalleContainerShowingWeather.appendChild(temperatureMax);
-    temperatureMax.innerText = 'Max  ' + apiData.main.temp_max + ' °C';
+    temperatureMax.innerText = '↑  ' + apiData.main.temp_max + ' °C';
     temperatureMax.classList.add("temperatureMax")
 
     const temperatureMin = document.createElement('h5');
     smalleContainerShowingWeather.appendChild(temperatureMin);
-    temperatureMin.innerText = 'Min  ' + apiData.main.temp_min + ' °C';
+    temperatureMin.innerText = '↓  ' + apiData.main.temp_min + ' °C';
     temperatureMin.classList.add("temperatureMin")
+
+    const tempertureContainer = document.createElement('div');
+    tempertureContainer.classList.add('temperatureCon');
+    smalleContainerShowingWeather.appendChild(tempertureContainer);
+    tempertureContainer.appendChild(temperatureMax)
+    tempertureContainer.appendChild(temperatureMin)
 
 
     const WeatherIcon = apiData.weather[0].icon;
