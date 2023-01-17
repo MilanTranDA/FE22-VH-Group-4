@@ -1,3 +1,13 @@
+:root {
+    --clr-dark-100-: #4E4450;
+    --clr-dark-200-: #625665;
+    --clr-light-1000: #EEFFEE;
+    --clr-light-800: #D6F0DD;
+    --clr-light-700: #D6EAD6;
+    --clr-accent-: #4EE99E;
+    --clr-weather-blue: #35ABED;
+}
+
 /* Preloader Gif */
 #preloader {
     position: fixed;
