@@ -78,6 +78,12 @@ function showWeatherData(apiData) {
     temperatureMin.innerText = 'Min  ' +  apiData.list[0].main.temp_max+ ' °C';
     temperatureMin.classList.add("temperatureMin")
 
+    const tempertureContainer = document.createElement('div');
+    tempertureContainer.classList.add('temperatureCon');
+    smalleContainerShowingWeather.appendChild(tempertureContainer);
+    tempertureContainer.appendChild(temperatureMax)
+    tempertureContainer.appendChild(temperatureMin)
+
 
     const WeatherIcon = apiData.list[0].weather[0].icon;
     const imageUrl = `http://openweathermap.org/img/wn/${WeatherIcon}@2x.png`

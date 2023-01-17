@@ -7,7 +7,11 @@
     --clr-accent-: #4EE99E;
     --clr-weather-blue: #35ABED;
 }
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: sans-serif;
     background-color: var(--clr-weather-blues);   
@@ -24,6 +28,8 @@ form, .hero-image, .Container{
     
 }
 
+/* =========weather container======= */
+
 .Container{
     background-color: var(--clr-weather-blue);
     color: var(--clr-light-1000);
@@ -33,7 +39,24 @@ form, .hero-image, .Container{
 .weatherIcon{
     position: relative;
     top: -120px;
-    right: -170px;
+    right: -130px;
+}
+.temperatureCelcius{
+    font-size: 30px;
+    padding: 10px;
+    
+    
+}
+.temperatureCon{
+    display: flex;
+    gap: 10px;
+}
+.temperatureCelcius::after {
+    content:" °C";
+    font-size: 15px;
+    position: relative;
+    top: -10px;
+    /* CSS styles go here */
 }
 
 /* Preloader Gif */
