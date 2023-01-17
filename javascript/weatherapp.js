@@ -4,12 +4,13 @@ const mainContainerToshowWeather = document.querySelector('#mainContainerToshowW
 const error = document.querySelector('#errorParagraf');
 
 
-
+//created so that it shows malmö weather automaticly when you enter the website. 
 function performinitialSearch() {
     fetchfunction('Malmö');
-
 }
 performinitialSearch();
+
+
 
 function searchForWeather(event) {
     event.preventDefault();
@@ -33,9 +34,29 @@ const fetchUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${SearchedF
 
             }
         })
+        // .then(createDataByDay)
         .then(showWeatherData)
         .catch(showErrorMessage)
 }
+// function createDataByDay (apiData){
+//     const weekday = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+//     const date = new Date();
+//     let day = weekday[date.getDay()];
+
+
+//     for(let i=0; i=apiData.length; i++ ){
+//         maxtemp = apiData.list[0].main.temp_max;
+//         console.log(maxtemp)
+
+//         //Steg 1 lös ut maxtemp för från alla objekten 
+//     }
+
+//     return [{
+//         day: "Mpnday",
+//         minWeatherTemp: 3,
+//         maxWeatherTemp: 20
+//     }]
+// }
 
 function showWeatherData(apiData) {
     console.log(apiData)
@@ -47,16 +68,14 @@ function showWeatherData(apiData) {
     mainContainerToshowWeather.appendChild(smalleContainerShowingWeather);
     smalleContainerShowingWeather.classList.add("smallContainerForWeather")
 
-
+    //Showing the days for weather app. 
     const weekday = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
     const date = new Date();
     let day = weekday[date.getDay()];
-    console.log(day)
-    
-    const cityName = document.createElement('h3');
-    smalleContainerShowingWeather.appendChild(cityName);
-    cityName.innerText = 'Weather in ' + apiData.city.name;
-    cityName.classList.add("cityName")
+    const dayForWeather = document.createElement('h3');
+    smalleContainerShowingWeather.appendChild(dayForWeather);
+    dayForWeather.innerText = day;
+    dayForWeather.classList.add("CurrentDayforWeather")
 
     const weatherDescription = document.createElement('h5');
     smalleContainerShowingWeather.appendChild(weatherDescription);
@@ -84,15 +103,14 @@ function showWeatherData(apiData) {
     tempertureContainer.appendChild(temperatureMax)
     tempertureContainer.appendChild(temperatureMin)
 
-
     const WeatherIcon = apiData.list[0].weather[0].icon;
     const imageUrl = `http://openweathermap.org/img/wn/${WeatherIcon}@2x.png`
     const showWeatherIconImage = document.createElement('img');
     smalleContainerShowingWeather.appendChild(showWeatherIconImage);
     showWeatherIconImage.src = imageUrl;
     showWeatherIconImage.classList.add('weatherIcon')
+     }
 
-}
 
 
 function showErrorMessage(errorMessage) {
