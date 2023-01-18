@@ -228,7 +228,7 @@ border: solid 2px #0066cc;
     border-top: 10px solid var(--clr-dark-100-) ;
 }
 
-#socials {
+#socials, #logo {
 /*   /*Använt https://codepen.io/sosuke/pen/Pjoqqp för att räkna ut "färgen"*/
    filter: invert(36%) sepia(6%) saturate(1020%) hue-rotate(242deg) brightness(93%) contrast(91%);
     /* filter: invert(100%);  */
