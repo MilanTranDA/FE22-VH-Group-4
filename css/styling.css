@@ -22,7 +22,8 @@ body{
     position: relative;
     margin: 0;
     min-height: 100%;
-    padding-bottom: 6.74rem;
+    padding-bottom: 10.74rem;
+    
    
     
    
@@ -104,7 +105,6 @@ footer{
     right: 0;
     left: 0;
     bottom: 0;
-
 
 
     background: var(--clr-light-1000);
