@@ -142,8 +142,6 @@ color: var(--clr-dark-200-);
      border-style: solid;
      border-radius: 28px;
      
-     
-     
 }
 
 
@@ -204,6 +202,9 @@ color: var(--clr-dark-200-);
     
 /* CSS MOBILE VERSION */
 
+.mobil-navbar{
+    display: none;
+}
 
 .navbar {
     display: flex;
