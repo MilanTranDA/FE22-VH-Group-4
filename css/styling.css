@@ -209,10 +209,12 @@ border: solid 2px #0066cc;
 
 
 .navbar {
-
+    display: flex;
+    /* justify-content: center; */
+    border-bottom: 5px solid var(--clr-dark-200-);
     background: var(--clr-light-1000);
 }
-
+.navbar-nav{}
 /* Social media fixa darkmode / white mode ändra färger */
 #instagram {
     fill: var(--clr-light-1000);
@@ -220,15 +222,16 @@ border: solid 2px #0066cc;
 
 #footer-for-all {
     background: var(--clr-light-1000);
-
+    border-top: 5px solid var(--clr-dark-200-);
     min-width: 100vw;
     position: relative;
     bottom: auto;
     padding: 10px;
 }
 
-#socials {
+#socials, #logo, .navbar-nav{
    fill: var(--clr-dark-100-);
+   filter: invert(36%) sepia(6%) saturate(1020%) hue-rotate(242deg) brightness(93%) contrast(91%);
    /* filter ändras färg till vit behåll till darkmode */
     /* filter: invert(100%);  */
 }
