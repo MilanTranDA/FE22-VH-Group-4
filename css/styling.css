@@ -78,3 +78,11 @@ form, .hero-image, .Container{
 }
 
 /* CSS */
+
+.navbar{
+    background: var(--clr-dark-100-);
+}
+/* Social media fixa darkmode / white mode ändra färger */
+#instagram{ 
+    fill: var(--clr-light-1000);
+}
