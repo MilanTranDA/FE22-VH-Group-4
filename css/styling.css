@@ -29,43 +29,48 @@ body{
    
 }
 
-.background-styling{
+.background-styling {
     background-color: var(--clr-weather-blue);
 }
-form, .hero-image, .Container{
+
+form,
+.hero-image,
+.Container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    
+
 }
 
 /* =========weather container======= */
 
-.Container{
+.Container {
     background-color: var(--clr-weather-blue);
     color: var(--clr-light-1000);
     
-    
 }
 
-.weatherIcon{
+.weatherIcon {
     position: relative;
     top: -120px;
     right: -130px;
 }
-.temperatureCelcius{
+
+.temperatureCelcius {
     font-size: 30px;
     padding: 10px;
-    
-    
+
+
 }
-.temperatureCon{
+
+.temperatureCon {
     display: flex;
     gap: 10px;
 }
+
 .temperatureCelcius::after {
-    content:" °C";
+    content: " °C";
     font-size: 15px;
     position: relative;
     top: -10px;
@@ -81,7 +86,8 @@ form, .hero-image, .Container{
     height: 100vh;
     z-index: 99999;
 }
-#preloader img{
+
+#preloader img {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -90,7 +96,8 @@ form, .hero-image, .Container{
     transform: translate(-50%, -50%);
 }
 
-/* CSS */
+/* CSS MOBILE VERSION */
+
 
 /* ======================btn-search============== */
 
@@ -174,10 +181,29 @@ border: solid 2px #0066cc;
     
 
 
-.navbar{
+
+.navbar {
+
     background: var(--clr-dark-100-);
 }
+
 /* Social media fixa darkmode / white mode ändra färger */
-#instagram{ 
+#instagram {
     fill: var(--clr-light-1000);
+}
+
+#footer-for-all {
+    background: var(--clr-dark-100-);
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+}
+
+#socials {
+    filter: invert(100%);
+}
+
+#copyright {
+    margin-top: 30px;
 }
