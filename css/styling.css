@@ -1,6 +1,6 @@
 :root {
     --clr-dark-100-: #4E4450;
-    --clr-dark-200-: #625665;
+    --clr-dark-200-: #635766;
     --clr-light-1000: #EEFFEE;
     --clr-light-800: #D6F0DD;
     --clr-light-700: #D6EAD6;
@@ -211,6 +211,7 @@ border: solid 2px #0066cc;
 .navbar {
 
     background: var(--clr-light-1000);
+    border-bottom: 10px solid var(--clr-dark-100-) ;
 }
 
 /* Social media fixa darkmode / white mode ändra färger */
@@ -220,19 +221,20 @@ border: solid 2px #0066cc;
 
 #footer-for-all {
     background: var(--clr-light-1000);
-
     min-width: 100vw;
     position: relative;
     bottom: auto;
     padding: 10px;
+    border-top: 10px solid var(--clr-dark-100-) ;
 }
 
-#socials {
-   fill: var(--clr-dark-100-);
-   /* filter ändras färg till vit behåll till darkmode */
+#socials, #logo {
+/*   /*Använt https://codepen.io/sosuke/pen/Pjoqqp för att räkna ut "färgen"*/
+   filter: invert(36%) sepia(6%) saturate(1020%) hue-rotate(242deg) brightness(93%) contrast(91%);
     /* filter: invert(100%);  */
 }
 
 #copyright {
     margin-top: 30px;
+    
 }
