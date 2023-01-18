@@ -94,6 +94,7 @@ form, .hero-image, .Container{
 
 
 
+
 /* ================footer=================== */
 
 
@@ -120,4 +121,12 @@ footer{
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(238, 255, 238, 0.28);
 
+}
+
+.navbar{
+    background: var(--clr-dark-100-);
+}
+/* Social media fixa darkmode / white mode ändra färger */
+#instagram{ 
+    fill: var(--clr-light-1000);
 }
