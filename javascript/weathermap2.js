@@ -40,9 +40,8 @@ const n = 10;
     map.on('load', () => {
         const layer = interpolateHeatmapLayer.create({
             points: points,
-            // averageThreshold: 0.1,
             layerId: 'temperature'
         });
-        map.addLayer(layer, 'road-label'); // Text utanpå färg-layer:t
+        map.addLayer(layer, 'road-label');
     });
 })();
