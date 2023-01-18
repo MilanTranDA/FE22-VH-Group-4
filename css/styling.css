@@ -21,8 +21,9 @@ body{
     background-color: var(--clr-weather-blues);
     /* position: relative; */
     /* margin: 0; */
-    /* min-height: 100%;
-    padding-bottom: 11.74rem; */
+    /* padding-bottom: 11.74rem; */ 
+     min-height: 100vh;
+    
     
    
     
@@ -96,7 +97,6 @@ form,
     transform: translate(-50%, -50%);
 }
 
-/* CSS MOBILE VERSION */
 
 
 /* ======================btn-search============== */
@@ -205,12 +205,12 @@ border: solid 2px #0066cc;
 } */
   
     
-
+/* CSS MOBILE VERSION */
 
 
 .navbar {
 
-    background: var(--clr-dark-100-);
+    background: var(--clr-light-1000);
 }
 
 /* Social media fixa darkmode / white mode ändra färger */
@@ -219,15 +219,18 @@ border: solid 2px #0066cc;
 }
 
 #footer-for-all {
-    background: var(--clr-dark-100-);
-    width: 100vw;
-    position: fixed;
-    bottom: 0;
+    background: var(--clr-light-1000);
+
+    min-width: 100vw;
+    position: relative;
+    bottom: auto;
     padding: 10px;
 }
 
 #socials {
-    filter: invert(100%);
+   fill: var(--clr-dark-100-);
+   /* filter ändras färg till vit behåll till darkmode */
+    /* filter: invert(100%);  */
 }
 
 #copyright {
