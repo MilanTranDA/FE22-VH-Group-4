@@ -7,14 +7,25 @@
     --clr-accent-: #4EE99E;
     --clr-weather-blue: #35ABED;
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    height: 100%;
+}
 body{
     font-family: sans-serif;
-    background-color: var(--clr-weather-blues);   
+    background-color: var(--clr-weather-blues);
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    padding-bottom: 6.74rem;
+   
+    
+   
 }
 
 .background-styling{
@@ -33,6 +44,7 @@ form, .hero-image, .Container{
 .Container{
     background-color: var(--clr-weather-blue);
     color: var(--clr-light-1000);
+    
     
 }
 
@@ -56,7 +68,7 @@ form, .hero-image, .Container{
     font-size: 15px;
     position: relative;
     top: -10px;
-    /* CSS styles go here */
+   
 }
 
 /* Preloader Gif */
@@ -78,3 +90,34 @@ form, .hero-image, .Container{
 }
 
 /* CSS */
+
+
+
+
+/* ================footer=================== */
+
+
+footer{    
+    background-color: var(--clr-light-1000);
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+
+
+    background: var(--clr-light-1000);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(238, 255, 238, 0.28);
+
+    background: var(--clr-light-1000);
+    border-radius: 13px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(238, 255, 238, 0.28);
+
+}

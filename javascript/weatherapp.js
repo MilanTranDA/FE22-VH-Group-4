@@ -89,12 +89,12 @@ function showWeatherData(apiData) {
 
     const temperatureMax = document.createElement('h5');
     smalleContainerShowingWeather.appendChild(temperatureMax);
-    temperatureMax.innerText = 'Max  ' +  apiData.list[0].main.temp_max+ ' °C';
+    temperatureMax.innerText = '↑  ' +  apiData.list[0].main.temp_max+ ' °C';
     temperatureMax.classList.add("temperatureMax")
 
     const temperatureMin = document.createElement('h5');
     smalleContainerShowingWeather.appendChild(temperatureMin);
-    temperatureMin.innerText = 'Min  ' +  apiData.list[0].main.temp_max+ ' °C';
+    temperatureMin.innerText = '↓  ' +  apiData.list[0].main.temp_max+ ' °C';
     temperatureMin.classList.add("temperatureMin")
 
     const tempertureContainer = document.createElement('div');
