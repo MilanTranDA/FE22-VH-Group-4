@@ -107,17 +107,14 @@ form,
 
 .btn-search{
 
-font-family: Roboto, sans-serif;
+
 font-weight: 0;
 font-size: 14px;
-color: #fff;
-background-color:var(--clr-weather-blue);
+color: var(--clr-light-1000);
+background-color:var(--clr-dark-200-);
 padding: 8px 10px;
-border: solid #ffffff 1px;
-box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-border-radius: 45px 0px;
+border-radius: 40px;
 transition : 1000ms;
-transform: translateY(0);
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -129,24 +126,24 @@ text-transform: lowercase;
 
 transition : 1000ms;
 padding: 5px 10px;
-transform : translateY(-0px);
-background-color: #fff;
-color: #0066cc;
-border: solid 2px #0066cc;
+background-color: var(--clr-accent-);
+color: var(--clr-dark-200-);
+
 }
 
 
 .input-field{
-    padding: 10px;
-     font-size: 15px;
+    padding: 7px;
+     font-size: 13px;
      border-width: 2px;
-     border-color: #CCCCCC;
+     border-color: var(--clr-dark-200-);
      background-color: var(--clr-light-1000);
-     color: #000000;
+     color: var(--clr-dark-100-);
      border-style: solid;
-     border-radius: 28px 0px;
-     box-shadow: 0px 0px 5px rgba(66,66,66,.75);
-     text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+     border-radius: 28px;
+     
+     
+     
 }
 
 
