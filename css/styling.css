@@ -6,28 +6,50 @@
     --clr-light-700: #D6EAD6;
     --clr-accent-: #4EE99E;
     --clr-weather-blue: #35ABED;
+
+    --bg-color: var(--clr-light-1000);
+    --bg-secondary-color: var(--clr-light-700);
+    --text-color: var(--clr-dark-100-);
+    --link-color: var(--clr-dark-100-);
+    --button-color: var(--clr-dark-200-);
+    --button-text-color: var(--clr-light-1000);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.light-theme {
+    --bg-color: var(--clr-dark-100-);
+    --bg-secondary-color: var(--clr-light-700);
+    --text-color: var(--clr-dark-100-);
+    --link-color: var(--clr-dark-100-);
+    --button-color: var(--clr-dark-200-);
+    --button-text-color: var(--clr-light-1000);
+}
+
+.dark-theme {
+    --bg-color: var(--clr-dark-100-);
+    --bg-secondary-color: var(--clr-dark-200-);
+    --text-color: var(--clr-light-1000);
+    --link-color: var(--clr-light-1000);
+    --button-color: var(--clr-dark-200-);
+    --button-text-color: var(--clr-light-1000);
+}
+
 /* html{
     height: 100%;
 } */
-body{
+body {
     font-family: sans-serif;
-    background-color: var(--clr-weather-blues);
+    background-color: var(--bg-color);
     /* position: relative; */
     /* margin: 0; */
-    /* padding-bottom: 11.74rem; */ 
-     min-height: 100vh;
-    
-    
-   
-    
-   
+    /* padding-bottom: 11.74rem; */
+    min-height: 100vh;
+
 }
 
 .background-styling {
@@ -49,7 +71,7 @@ form,
 .Container {
     background-color: var(--clr-weather-blue);
     color: var(--clr-light-1000);
-    
+
 }
 
 .weatherIcon {
@@ -61,7 +83,6 @@ form,
 .temperatureCelcius {
     font-size: 30px;
     padding: 10px;
-
 
 }
 
@@ -75,7 +96,7 @@ form,
     font-size: 15px;
     position: relative;
     top: -10px;
-   
+
 }
 
 /* Preloader Gif */
@@ -97,51 +118,92 @@ form,
     transform: translate(-50%, -50%);
 }
 
+/* About us page*/
+#about-us-page{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
 
+#about-us-page h1 {
+    text-align: center;
+}
+
+.user-container {
+    background-color: var(--bg-secondary-color);
+    display: flex;
+    flex-direction: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 5rem;
+}
+
+.user-card{
+    width: 350px;
+    height: 600px;
+    border-radius: 2rem;
+    overflow: auto;
+
+}
+
+.user-card-img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.card-body{
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 0 0 2rem 2rem;
+    /* background-color: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%,rgba(0, 0, 0, 1) 100%); */
+    position: relative;
+    top: -40px;
+    padding: 1rem 0;
+}
+
+.card-title{
+    text-align: center;
+    color: var(--clr-light-1000);
+}
 
 /* ======================btn-search============== */
 
+.btn-search {
 
 
-
-
-.btn-search{
-
-
-font-weight: 0;
-font-size: 14px;
-color: var(--clr-light-1000);
-background-color:var(--clr-dark-200-);
-padding: 8px 10px;
-border-radius: 40px;
-transition : 1000ms;
-display: flex;
-flex-direction: row;
-align-items: center;
-cursor: pointer;
-text-transform: lowercase;
+    font-weight: 0;
+    font-size: 14px;
+    color: var(--clr-light-1000);
+    background-color: var(--clr-dark-200-);
+    padding: 8px 10px;
+    border-radius: 40px;
+    transition: 1000ms;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    text-transform: lowercase;
 }
 
-.btn-search:hover{
+.btn-search:hover {
 
-transition : 1000ms;
-padding: 5px 10px;
-background-color: var(--clr-accent-);
-color: var(--clr-dark-200-);
+    transition: 1000ms;
+    padding: 5px 10px;
+    background-color: var(--clr-accent-);
+    color: var(--clr-dark-200-);
 
 }
 
 
-.input-field{
+.input-field {
     padding: 7px;
-     font-size: 13px;
-     border-width: 2px;
-     border-color: var(--clr-dark-200-);
-     background-color: var(--clr-light-1000);
-     color: var(--clr-dark-100-);
-     border-style: solid;
-     border-radius: 28px;
-     
+    font-size: 13px;
+    border-width: 2px;
+    border-color: var(--clr-dark-200-);
+    background-color: var(--clr-light-1000);
+    color: var(--clr-dark-100-);
+    border-style: solid;
+    border-radius: 28px;
+
 }
 
 
@@ -160,9 +222,10 @@ color: var(--clr-dark-200-);
         flex-wrap: wrap-reverse;
         align-content: baseline;
     }
-    
-    
+
+
 }
+
 /* footer{    
     background-color: var(--clr-light-1000);
     position: absolute;
@@ -198,11 +261,11 @@ color: var(--clr-dark-200-);
 /* .copyright{
    padding-top: 40px;
 } */
-  
-    
+
+
 /* CSS MOBILE VERSION */
 
-.mobil-navbar{
+.mobil-navbar {
     display: none;
 }
 
@@ -212,7 +275,9 @@ color: var(--clr-dark-200-);
     border-bottom: 5px solid var(--clr-dark-200-);
     background: var(--clr-light-1000);
 }
-.navbar-nav{}
+
+.navbar-nav {}
+
 /* Social media fixa darkmode / white mode ändra färger */
 #instagram {
     fill: var(--clr-light-1000);
@@ -227,10 +292,12 @@ color: var(--clr-dark-200-);
     padding: 10px;
 }
 
-#socials, #logo, .navbar-nav{
-   fill: var(--clr-dark-100-);
-   filter: invert(36%) sepia(6%) saturate(1020%) hue-rotate(242deg) brightness(93%) contrast(91%);
-   /* filter ändras färg till vit behåll till darkmode */
+#socials,
+#logo,
+.navbar-nav {
+    fill: var(--clr-dark-100-);
+    filter: invert(36%) sepia(6%) saturate(1020%) hue-rotate(242deg) brightness(93%) contrast(91%);
+    /* filter ändras färg till vit behåll till darkmode */
     /* filter: invert(100%);  */
 }
 
