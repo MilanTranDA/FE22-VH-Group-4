@@ -242,9 +242,14 @@ input:focus {
     
     /*  =============NAV BAR PC ======================== */
     .navbar {
-        display: block;
+        /* display: block;
         border-bottom: 5px solid var(--text-secondary-color);
-        background: var(--bg-color);
+        background: var(--bg-color); */
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        background: var(--clr-light-1000);
+        border-bottom: 5px solid var(--text-secondary-color);
     }
     
     .mobil-navbar{
