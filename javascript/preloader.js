@@ -5,20 +5,11 @@ window.addEventListener("load", function () {
     }, 1000);
 });
 
+
 function toggleNav() {
   var sidebar = document.querySelector(".sidebar");
   sidebar.style.left = (sidebar.style.left === '-50%') ? '0' : '-50%';
 }
-
-
-// function toggleNav() {
-//     var navbar = document.getElementById("navbarNav");
-//     if (navbar.style.display === "block") {
-//         navbar.style.display = "none";
-//     } else {
-//         navbar.style.display = "block";
-//     }
-// }
 
 //Toggle light and dark theme
 const toggle = document.getElementById('theme-toggle');
