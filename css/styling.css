@@ -321,7 +321,7 @@ input:focus {
   
     .sidebar {
         position: fixed;
-        background: var(--clr-dark-100-);
+        background: var(--clr-light-1000);
         height: 100%;
         width: 35%;
         left: -50%;
