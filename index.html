@@ -47,27 +47,29 @@
 
         <div class="mobil-navbar">
             <nav id="mobil-container">
-                <div class="logo-container">                   
+                <div class="logo-container">
                     <div class="navbar-button-container-mobile">
-                        <button id="hamburger-button" onclick="toggleNav()">
+                        <button class="hamburger-button" onclick="toggleNav()">
                             <div class="bar1"></div>
                             <div class="bar2"></div>
                             <div class="bar3"></div>
                         </button>
-                        <ul class="navbar-nav" id="navbarNav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="sida2.html">Map Forecast</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
+                        <div class="sidebar1 sidebar-open">
+                            <ul class="sidebar" id="navbarNav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="sida2.html">Map Forecast</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <a class="navbar-brand" href="index.html">
                         <img id="logo" src="images/sun.svg" alt="Logo"> WeatherFeather</a>
@@ -95,7 +97,7 @@
         </div>
     </div>
     <footer id="footer-for-all">
-        
+
         <div id="socials">
             <h4 id="footer-title">Platforms:</h4>
             <a id="github" href="https://github.com/" target="_blank"><img src="./images/icons8-github.svg" alt=""></a>
@@ -105,9 +107,9 @@
                     alt=""></a>
 
         </div>
-            <div id="copyright">
-                <h6>Copyright© 2023 </h6>
-            </div>
+        <div id="copyright">
+            <h6>Copyright© 2023 </h6>
+        </div>
 
     </footer>
 </body>
