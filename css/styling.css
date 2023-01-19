@@ -171,6 +171,10 @@ form,
 
 /* ======================btn-search============== */
 
+input:focus {
+    outline: none !important;
+}
+
 .btn-search {
 
 
@@ -192,7 +196,6 @@ form,
 .btn-search:hover {
 
     transition: 1000ms;
-    padding: 5px 10px;
     background-color: var(--clr-accent-);
     color: var(--clr-dark-200-);
 
