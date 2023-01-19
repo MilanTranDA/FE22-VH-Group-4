@@ -194,15 +194,15 @@ input:focus {
 }
 
 .btn-search:hover {
-
+    
     transition: 1000ms;
     background-color: var(--clr-accent-);
     color: var(--clr-dark-200-);
-
+    
 }
 
 #searchinput {
-        border: 0;
+    border: 0;
 }
 
 .input-field {
@@ -216,7 +216,12 @@ input:focus {
     border-radius: 28px;
 
 }
-
+/*  =============NAV BAR PC ======================== */
+.navbar {
+    display: none;
+    border-bottom: 5px solid var(--text-secondary-color);
+    background: var(--bg-color);
+}
 
 /* ================footer=================== */
 
@@ -234,6 +239,7 @@ input:focus {
         align-content: baseline;
     }
 
+    
 
 }
 
@@ -274,26 +280,31 @@ input:focus {
 } */
 
 
-/* CSS MOBILE VERSION */
+/* =============CSS MOBILE VERSION==================== */
 
 .mobil-navbar {
-    display: none;
-}
-
-.navbar {
     display: flex;
-    /* justify-content: center; */
-    border-bottom: 5px solid var(--text-secondary-color);
     background: var(--bg-color);
+    border-bottom: 5px solid var(--text-secondary-color);
+    /* display: none; */
+
+}
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.navbar-nav {}
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 5px;
+    background-color: var(--clr-dark-200-);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
 
 /* Social media fixa darkmode / white mode ändra färger */
-#instagram {
-    fill: var(--clr-light-1000);
-}
-
 #footer-for-all {
     position: absolute;
     bottom: 0;
