@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 :root {
     --clr-dark-100-: #4E4450;
     --clr-dark-200-: #625665;
@@ -14,6 +15,8 @@
     --link-color: var(--clr-dark-100-);
     --button-color: var(--clr-dark-200-);
     --button-text-color: var(--clr-light-1000);
+
+    --ff-default: 'Inter', sans-serif;;
 }
 
 * {
@@ -60,10 +63,10 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --bg-color: var(--clr-dark-100-);
-        --bg-secondary-color: var(--clr-light-700);
-        --text-color: var(--clr-dark-100-);
-        --text-secondary-color: var(--clr-dark-200-);
-        --link-color: var(--clr-dark-100-);
+        --bg-secondary-color: var(--clr-dark-200-);
+        --text-color: var(--clr-light-1000);
+        --text-secondary-color: var(--clr-light-700);
+        --link-color: var(--clr-light-1000);
         --button-color: var(--clr-dark-200-);
         --button-text-color: var(--clr-light-1000);
     }
@@ -73,7 +76,7 @@
     height: 100%;
 } */
 body {
-    font-family: sans-serif;
+    font-family: var(--ff-default);
     background-color: var(--bg-color);
     /* position: relative; */
     /* margin: 0; */
