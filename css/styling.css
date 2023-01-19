@@ -227,7 +227,7 @@ input:focus {
 
 @media only screen and (min-width:768px) {
     #footer-for-all {
-        background: var(--clr-dark-100-);
+        background: var(--clr-light-1000);
         width: 100vw;
         position: fixed;
         bottom: 0;
@@ -237,6 +237,7 @@ input:focus {
         align-items: flex-end;
         flex-wrap: wrap-reverse;
         align-content: baseline;
+        border-top:5px solid var(--clr-dark-200-);
     }
     
     /*  =============NAV BAR PC ======================== */
@@ -300,7 +301,7 @@ input:focus {
 .mobil-navbar {
     display: flex;
     flex-direction: column;
-    background: var(--bg-color);
+    background: var(--clr-light-1000);
     border-bottom: 5px solid var(--text-secondary-color);
 }
 .navbar-nav{
@@ -312,7 +313,7 @@ input:focus {
     align-self: center;
     align-items: center; */
     /* border: 2px solid green; */
-    transform:translateX(-500%)
+    /* transform:translateX(-500%) */
 }
 .navbar-button-container-mobile{
     /* border: 2px solid purple; */
@@ -331,18 +332,22 @@ input:focus {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: var(--bg-color);
-    border-top: 5px solid var(--text-secondary-color);
-    min-width: 100vw;
-
-    padding: 10px;
+    background: var(--clr-light-1000);
+    min-width: 100vw;    padding: 10px;
+    border-top:5px solid var(--clr-dark-200-);
     overflow: auto;
+    
 
 }
 
 }
-#socials,
-#logo,
+#socials{
+    filter: invert(38%) sepia(1%) saturate(3699%) hue-rotate(242deg) brightness(91%) contrast(96%);
+}
+#logo{
+    filter: invert(82%) sepia(20%) saturate(1203%) hue-rotate(90deg) brightness(96%) contrast(90%);
+}
+
 .navbar-nav {
     fill: var(--clr-dark-100-);
     filter: invert(36%) sepia(6%) saturate(1020%) hue-rotate(242deg) brightness(93%) contrast(91%);
@@ -352,6 +357,7 @@ input:focus {
 
 #copyright {
     margin-top: 30px;
+    filter: invert(38%) sepia(1%) saturate(3699%) hue-rotate(242deg) brightness(91%) contrast(96%);
 }
 /* ONLY FOR nav icons which are not bound by the variables, that's why we resorted to this method for svg icons*/
 /* Light theme */
