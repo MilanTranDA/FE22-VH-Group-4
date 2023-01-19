@@ -5,10 +5,9 @@ window.addEventListener("load", function () {
     }, 1000);
 });
 
-
 function toggleNav() {
   var sidebar = document.querySelector(".sidebar");
-  sidebar.style.left = (sidebar.style.left === '-50%') ? '0' : '-50%';
+  sidebar.style.left = (sidebar.style.left === '0%') ? '-50%' : '0%';
 }
 
 //Toggle light and dark theme

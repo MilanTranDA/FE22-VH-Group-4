@@ -323,9 +323,8 @@ input:focus {
         position: fixed;
         background: var(--clr-dark-100-);
         height: 100%;
-        transition: 0.3s;
-        width: 40%;
-        left: 40%;
+        width: 35%;
+        left: -50%;
         transition: 0.3s;
     }
 
