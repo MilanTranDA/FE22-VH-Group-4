@@ -288,17 +288,16 @@ form,
 }
 
 #footer-for-all {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background: var(--bg-color);
     border-top: 5px solid var(--text-secondary-color);
-    /* min-width: 100vw;
-    position: relative;
-    bottom: auto;
-    padding: 10px;
-    overflow: auto; */
+    min-width: 100vw;
 
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+    padding: 10px;
+    overflow: auto;
+
 }
 
 #socials,
