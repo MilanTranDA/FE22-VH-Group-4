@@ -281,19 +281,33 @@ input:focus {
 
 
 /* =============CSS MOBILE VERSION==================== */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
 
 .mobil-navbar {
     display: flex;
+    flex-direction: column;
     background: var(--bg-color);
     border-bottom: 5px solid var(--text-secondary-color);
-    /* display: none; */
-
+}
+.navbar-nav{
+    display: none;
 }
 .navbar-brand{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-self: center;
+    align-items: center;
+    border: 2px solid green;
 }
+.navbar-button-container{
+    border: 2px solid purple;
+}
+
 
 .bar1, .bar2, .bar3 {
     width: 30px;
@@ -302,8 +316,6 @@ input:focus {
     margin: 6px 0;
     transition: 0.4s;
 }
-
-
 /* Social media fixa darkmode / white mode ändra färger */
 #footer-for-all {
     position: absolute;
