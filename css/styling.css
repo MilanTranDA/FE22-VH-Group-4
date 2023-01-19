@@ -227,7 +227,7 @@ input:focus {
 
 @media only screen and (min-width:768px) {
     #footer-for-all {
-        background: var(--clr-dark-100-);
+        background: var(--bg-color);
         width: 100vw;
         position: fixed;
         bottom: 0;
