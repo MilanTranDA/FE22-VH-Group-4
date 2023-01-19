@@ -179,6 +179,7 @@ form,
     color: var(--clr-light-1000);
     background-color: var(--clr-dark-200-);
     padding: 8px 10px;
+    border: 0;
     border-radius: 40px;
     transition: 1000ms;
     display: flex;
@@ -197,6 +198,9 @@ form,
 
 }
 
+#searchinput {
+        border: 0;
+}
 
 .input-field {
     padding: 7px;
