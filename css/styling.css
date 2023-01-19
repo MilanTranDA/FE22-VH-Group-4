@@ -216,12 +216,12 @@ input:focus {
     border-radius: 28px;
 
 }
-/*  =============NAV BAR PC ======================== */
 .navbar {
     display: none;
     border-bottom: 5px solid var(--text-secondary-color);
     background: var(--bg-color);
 }
+
 
 /* ================footer=================== */
 
@@ -238,8 +238,17 @@ input:focus {
         flex-wrap: wrap-reverse;
         align-content: baseline;
     }
-
     
+    /*  =============NAV BAR PC ======================== */
+    .navbar {
+        display: block;
+        border-bottom: 5px solid var(--text-secondary-color);
+        background: var(--bg-color);
+    }
+    
+    .mobil-navbar{
+        display: none;
+    }
 
 }
 
@@ -279,7 +288,7 @@ input:focus {
    padding-top: 40px;
 } */
 
-
+@media only screen and (max-width:768px){
 /* =============CSS MOBILE VERSION==================== */
 .logo-container {
     display: flex;
@@ -298,14 +307,15 @@ input:focus {
     display: none;
 }
 .navbar-brand{
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-self: center;
-    align-items: center;
-    border: 2px solid green;
+    align-items: center; */
+    /* border: 2px solid green; */
+    transform:translateX(-500%)
 }
-.navbar-button-container{
-    border: 2px solid purple;
+.navbar-button-container-mobile{
+    /* border: 2px solid purple; */
 }
 
 
@@ -330,6 +340,7 @@ input:focus {
 
 }
 
+}
 #socials,
 #logo,
 .navbar-nav {
@@ -342,7 +353,6 @@ input:focus {
 #copyright {
     margin-top: 30px;
 }
-
 /* ONLY FOR nav icons which are not bound by the variables, that's why we resorted to this method for svg icons*/
 /* Light theme */
 @media (prefers-color-scheme: light) {
