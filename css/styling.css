@@ -76,6 +76,10 @@ form,
 
 }
 
+.hero-text{
+    color: var(--clr-light-1000);
+}
+
 /* =========weather container======= */
 
 .Container {
@@ -417,7 +421,7 @@ input:focus {
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     }
     .nav-link:hover{
-        box-shadow: inset 100px 0 0 0 var(--clr-light-700);
+        box-shadow: inset 100px 0 0 0 var(--bg-secondary-color);
         border-bottom: 2px solid var(--clr-accent-);
         background-color: var(--bg-secondary-color);
     }
@@ -446,7 +450,7 @@ input:focus {
     .mobil-navbar {
         display: flex;
         flex-direction: column;
-        background: var(--clr-light-1000);
+        background: var(--bg-color);
         border-bottom: 5px solid var(--text-secondary-color);
     }
 
@@ -470,7 +474,7 @@ input:focus {
 
     .sidebar {
         position: fixed;
-        background: var(--clr-light-1000);
+        background: var(--bg-color);
         height: 100%;
         width: 35%;
         left: -50%;
@@ -507,10 +511,11 @@ input:focus {
         position: absolute;
         bottom: 0;
         width: 100%;
-        background: var(--clr-light-1000);
+        background: var(--bg-color);
+        color: var(--text-color);
         min-width: 100vw;
         padding: 10px;
-        border-top: 5px solid var(--clr-dark-200-);
+        border-top: 5px solid var(--clr-accent-);
         overflow: auto;
         z-index: 99999;
 
@@ -520,10 +525,10 @@ input:focus {
         position: fixed;
         bottom: 0;
         width: 100%;
-        background: var(--clr-light-1000);
+        background: var(--bg-color);
         min-width: 100vw;
         padding: 10px;
-        border-top: 5px solid var(--clr-dark-200-);
+        border-top: 5px solid var(--clr-accent-);
         overflow: auto;
 
     }
@@ -534,7 +539,7 @@ input:focus {
         border-bottom: 0.5px solid var(--clr-accent-); /* or any desired value */
     }
 }
-.socials {
+.socials a{
     filter: invert(38%) sepia(1%) saturate(3699%) hue-rotate(242deg) brightness(91%) contrast(96%);
 }
 
@@ -545,5 +550,5 @@ input:focus {
 
 #copyright {
     margin-top: 30px;
-    filter: invert(38%) sepia(1%) saturate(3699%) hue-rotate(242deg) brightness(91%) contrast(96%);
+    /* filter: invert(38%) sepia(1%) saturate(3699%) hue-rotate(242deg) brightness(91%) contrast(96%); */
 }
