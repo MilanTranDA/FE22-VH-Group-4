@@ -29,13 +29,14 @@
 /* Light theme */
 @media (prefers-color-scheme: light) {
     :root {
-        --bg-color: var(--clr-dark-100-);
+        --bg-color: var(--clr-light-1000);
         --bg-secondary-color: var(--clr-light-700);
         --text-color: var(--clr-dark-100-);
         --text-secondary-color: var(--clr-dark-200-);
         --link-color: var(--clr-dark-100-);
         --button-color: var(--clr-dark-200-);
         --button-text-color: var(--clr-light-1000);
+        --button-background-color: var(--clr-light-800);
     }
 }
 
@@ -49,6 +50,7 @@
         --link-color: var(--clr-light-1000);
         --button-color: var(--clr-dark-200-);
         --button-text-color: var(--clr-light-1000);
+        --button-background-color: var(--clr-light-800);
     }
 }
 
@@ -280,7 +282,7 @@ form,
     color: var(--text-color);
     text-align: center;
     margin: 3rem;
-    background-color: var(--clr-light-1000);
+    background-color: var(--bg-color);
 }
 
 /* ======================btn-search============== */
@@ -369,8 +371,9 @@ input:focus {
     .navbar{
         display: flex;
         align-items: center;
-        background: var(--clr-light-1000);
-        border-bottom: 5px solid var(--text-secondary-color);
+        background: var(--bg-color);
+        border-bottom: 5px solid var(--clr-accent-);
+        color: var(--text-color);
     }
     .container-navbarpc{
         display: flex;
@@ -398,13 +401,14 @@ input:focus {
         flex-direction: row;
         align-items: center;
         margin-left: auto; /* this will push it to the right side */
+        background-color: var(--bg-color);
     }
     .nav-link{
         display: flex;
         justify-content: space-around;
         text-decoration: none;
         padding: 5px;
-        color: var(--button-color);
+        color: var(--text-color);
         font-family:sans-serif;
         font-weight: bolder;
         box-shadow: inset 0 0 0 0 var(--bg-secondary-color);
@@ -415,10 +419,12 @@ input:focus {
     .nav-link:hover{
         box-shadow: inset 100px 0 0 0 var(--bg-secondary-color);
         border-bottom: 2px solid var(--clr-accent-);
+        background-color: var(--bg-secondary-color);
     }
     #logo{
         padding-left: 10px;
     }
+
 
     .mobil-navbar {
         display: none;
@@ -452,10 +458,11 @@ input:focus {
         display: flex;
         align-items: center;
         text-decoration: none;
-        color: var(--button-color);
     }
+
     .weatherfeather{
         padding-left: 5px;
+        color: var(--text-color);
     }
 
     .navbar-button-container-mobile {}
