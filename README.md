@@ -1,7 +1,7 @@
 # FE22-VH-Group-4 WeatherFeather
 
 ## WeatherFeather
-https://milantranda.github.io/FE22-VH-Group-4/index.html
+
 
 Vi är grupp 4 som skapade ett mini-projekt om väderapp med hjälp av openweather api
 
