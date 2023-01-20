@@ -493,6 +493,7 @@ input:focus {
     #mobile-bottom-line{
         border-bottom: 3px solid var(--clr-accent-);
         text-decoration: none;
+        color: var(--button-text-color);
     }
     /* Social media fixa darkmode / white mode ändra färger */
     .footer-for-all {
