@@ -38,25 +38,6 @@ function fetchfunction(SearchedForcity) {
         .then(showWeatherData)
         .catch(showErrorMessage)
 }
-// function createDataByDay (apiData){
-//     const weekday = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-//     const date = new Date();
-//     let day = weekday[date.getDay()];
-
-
-//     for(let i=0; i=apiData.length; i++ ){
-//         maxtemp = apiData.list[0].main.temp_max;
-//         console.log(maxtemp)
-
-//         //Steg 1 lös ut maxtemp för från alla objekten 
-//     }
-
-//     return [{
-//         day: "Mpnday",
-//         minWeatherTemp: 3,
-//         maxWeatherTemp: 20
-//     }]
-// }
 
 function showWeatherData(apiData) {
     console.log(apiData)
@@ -67,18 +48,18 @@ function showWeatherData(apiData) {
     const smalleContainerShowingWeather = document.createElement('div');
     mainContainerToshowWeather.appendChild(smalleContainerShowingWeather);
     smalleContainerShowingWeather.classList.add("smallContainerForWeather")
-
-    //Showing the days for weather app. 
     
-    const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    const date = new Date();
-    let day = weekday[date.getDay()];
-    const dayForWeather = document.createElement('h3');
-    smalleContainerShowingWeather.appendChild(dayForWeather);
-    dayForWeather.innerText = day;
-    dayForWeather.classList.add("CurrentDayforWeather")
-    
+    // Lägg in dagen för de framtida dagarna
     for (i = 0; i < 5; i++) {
+        const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const date = new Date();
+        // let findDay = ;
+        let day = weekday[date.getDay()];
+        const dayForWeather = document.createElement('h3');
+        smalleContainerShowingWeather.appendChild(dayForWeather);
+        dayForWeather.innerText = weekday[date.getDay()+i];
+        dayForWeather.classList.add("CurrentDayforWeather")
+
         const weatherDescription = document.createElement('h5');
         smalleContainerShowingWeather.appendChild(weatherDescription);
         weatherDescription.innerText = apiData.list[i].weather[0].main;
@@ -86,7 +67,7 @@ function showWeatherData(apiData) {
     
         const temperatureCelcius = document.createElement('h3');
         smalleContainerShowingWeather.appendChild(temperatureCelcius);
-        temperatureCelcius.innerText = apiData.list[i].main.temp + ' °C';
+        temperatureCelcius.innerText = apiData.list[i].main.temp;
         temperatureCelcius.classList.add("temperatureCelcius")
     
         const temperatureMax = document.createElement('h5');
