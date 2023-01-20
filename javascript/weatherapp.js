@@ -72,6 +72,13 @@ function showWeatherData(apiData) {
         temperatureCelcius.innerText = apiData.list[i].main.temp;
         temperatureCelcius.classList.add("temperatureCelcius")
     
+        const WeatherIcon = apiData.list[i].weather[0].icon;
+        const imageUrl = `http://openweathermap.org/img/wn/${WeatherIcon}@2x.png`
+        const showWeatherIconImage = document.createElement('img');
+        smalleContainerShowingWeather.appendChild(showWeatherIconImage);
+        showWeatherIconImage.src = imageUrl;
+        showWeatherIconImage.classList.add('weatherIcon')
+
         const temperatureMax = document.createElement('h5');
         smalleContainerShowingWeather.appendChild(temperatureMax);
         temperatureMax.innerText = '↑  ' + apiData.list[i].main.temp_max + ' °C';
@@ -88,15 +95,6 @@ function showWeatherData(apiData) {
         tempertureContainer.appendChild(temperatureMax)
         tempertureContainer.appendChild(temperatureMin)
 
-        
-
-    
-        const WeatherIcon = apiData.list[i].weather[0].icon;
-        const imageUrl = `http://openweathermap.org/img/wn/${WeatherIcon}@2x.png`
-        const showWeatherIconImage = document.createElement('img');
-        smalleContainerShowingWeather.appendChild(showWeatherIconImage);
-        showWeatherIconImage.src = imageUrl;
-        showWeatherIconImage.classList.add('weatherIcon')
     
         console.log(apiData.list[i])
     }
