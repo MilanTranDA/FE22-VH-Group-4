@@ -244,7 +244,7 @@ h1{
     flex: 3;
     margin: 0.5rem;
     color: var(--bg-color);
-    background-color: var(--clr-light-1000);
+    background-color: var(--button-background-color);
     padding: 1.2rem;
     /* margin: 1rem 15%; */
     border-radius: 2rem;
@@ -286,7 +286,7 @@ h1{
 
 /* ================Map forecast============== */
 #map-page h1{
-    color: var(--clr-dark-200-);
+    color: var(--text-color);
     text-align: center;
     margin: 3rem;
     background-color: var(--bg-color);
@@ -347,6 +347,9 @@ input:focus {
 
 
 /* ================footer=================== */
+.weatherfeather{
+    color: var(--text-color);
+}
 @media only screen and (max-width:768px) {
 
     /* =============CSS MOBILE VERSION==================== */
@@ -376,7 +379,6 @@ input:focus {
 
     .weatherfeather{
         padding-left: 5px;
-        color: var(--text-color);
     }
 
     .navbar-button-container-mobile {}
@@ -571,6 +573,8 @@ input:focus {
     /* filter: invert(38%) sepia(1%) saturate(3699%) hue-rotate(242deg) brightness(91%) contrast(96%); */
 }
 
-
-
-
+@media (prefers-color-scheme: dark) {
+    .socials a{
+        filter: invert(95%) sepia(2%) saturate(1368%) hue-rotate(70deg) brightness(105%) contrast(101%);
+    }
+}
