@@ -163,7 +163,7 @@ h1{
 .user-card {
     border-radius: 2rem;
     overflow: auto;
-
+    background-color: var(--clr-accent-);
 }
 
 .user-card-img {
@@ -191,7 +191,7 @@ h1{
         object-fit: cover;
     }
 
-    #about-us-page {
+    /* #about-us-page {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -200,7 +200,14 @@ h1{
         margin: 4rem 20% 20% 20%;
         border-radius: 3rem;
 
+    } */
+    #about-us-page {
+        /* display */
+        background-color: var(--bg-secondary-color);
+        padding: 2rem;
+        border-radius: 2rem;
     }
+
 }
 
 @media (min-width: 1024px) {
@@ -398,7 +405,7 @@ input:focus {
         margin: 0.5rem 1rem;
         border: 0;
     }
-    
+
     .bar1,
     .bar2,
     .bar3 {
@@ -457,7 +464,7 @@ input:focus {
     #footer-for-about {
         background: var(--clr-light-1000);
         width: 100vw;
-        position: fixed;
+        position: absolute;
         bottom: 0;
         /* padding: 10px; */
         display: flex;
