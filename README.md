@@ -2,6 +2,9 @@
 
 ## WeatherFeather
 https://milantranda.github.io/FE22-VH-Group-4/index.html
+
+Vi är grupp 4 som skapade ett mini-projekt om väderapp med hjälp av openweather api
+
 ## Members & Roles
 - Milan: (html & css,js)
 - Maja:  (html & js)
