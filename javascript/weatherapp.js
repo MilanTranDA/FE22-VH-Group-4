@@ -94,7 +94,7 @@ function showWeatherData(apiData) {
 
     const temperatureMin = document.createElement('h5');
     smalleContainerShowingWeather.appendChild(temperatureMin);
-    temperatureMin.innerText = '↓  ' +  apiData.list[0].main.temp_max+ ' °C';
+    temperatureMin.innerText = '↓  ' +  apiData.list[0].main.temp_min+ ' °C';
     temperatureMin.classList.add("temperatureMin")
 
     const tempertureContainer = document.createElement('div');
