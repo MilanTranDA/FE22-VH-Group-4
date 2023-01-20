@@ -434,6 +434,11 @@ input:focus {
         display: none;
     }
 
+    .parentContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 
