@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 :root {
     --clr-dark-100-: #4E4450;
     --clr-dark-200-: #625665;
@@ -14,6 +16,8 @@
     --link-color: var(--clr-dark-100-);
     --button-color: var(--clr-dark-200-);
     --button-text-color: var(--clr-light-1000);
+
+    --ff-default: 'Inter', sans-serif;
 }
 
 * {
@@ -22,27 +26,6 @@
     box-sizing: border-box;
 }
 
-/* .light-theme {
-    --bg-color: var(--clr-dark-100-);
-    --bg-secondary-color: var(--clr-light-700);
-    --text-color: var(--clr-dark-100-);
-    --text-secondary-color: var(--clr-dark-200-);
-    --link-color: var(--clr-dark-100-);
-    --button-color: var(--clr-dark-200-);
-    --button-text-color: var(--clr-light-1000);
-}
-
-.dark-theme {
-    --bg-color: var(--clr-dark-100-);
-    --bg-secondary-color: var(--clr-dark-200-);
-    --text-color: var(--clr-light-1000);
-    --text-secondary-color: var(--clr-light-700);
-    --link-color: var(--clr-light-1000);
-    --button-color: var(--clr-dark-200-);
-    --button-text-color: var(--clr-light-1000);
-} */
-
-/* ONLY FOR nav icons which are not bound by the variables, that's why we resorted to this method for svg icons*/
 /* Light theme */
 @media (prefers-color-scheme: light) {
     :root {
@@ -60,24 +43,19 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --bg-color: var(--clr-dark-100-);
-        --bg-secondary-color: var(--clr-light-700);
-        --text-color: var(--clr-dark-100-);
-        --text-secondary-color: var(--clr-dark-200-);
-        --link-color: var(--clr-dark-100-);
+        --bg-secondary-color: var(--clr-dark-200-);
+        --text-color: var(--clr-light-1000);
+        --text-secondary-color: var(--clr-light-700);
+        --link-color: var(--clr-light-1000);
         --button-color: var(--clr-dark-200-);
         --button-text-color: var(--clr-light-1000);
     }
 }
 
-/* html{
-    height: 100%;
-} */
+
 body {
-    font-family: sans-serif;
+    font-family: var(--ff-default);
     background-color: var(--bg-color);
-    /* position: relative; */
-    /* margin: 0; */
-    /* padding-bottom: 11.74rem; */
     min-height: 100vh;
 
 }
@@ -188,9 +166,6 @@ form,
 .card-body {
     background-color: rgba(0, 0, 0, 1);
     border-radius: 0 0 2rem 2rem;
-    /* background-color: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%,rgba(0, 0, 0, 1) 100%); */
-    /* position: relative; */
-    /* top: -35px; */
     padding: 1rem 0;
 }
 
@@ -226,6 +201,87 @@ form,
     }
 }
 
+/* ================Contact============== */
+#contact-section h2 {
+    font-size: 2rem;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    color: var(--text-color);
+    margin: 1rem 15%;
+}
+
+.contact-section > * {
+    margin: 0.5rem 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact-form>* {
+    outline: none !important;
+    border: 0;
+}
+
+.contact-form input {
+    flex: 3;
+    margin: 0.5rem;
+    color: var(--bg-color);
+    background-color: var(--clr-light-1000);
+    padding: 1.2rem;
+    /* margin: 1rem 15%; */
+    border-radius: 2rem;
+    font-size: 1.4rem;
+}
+
+.contact-form button {
+    color: var(--clr-light-1000);
+    background-color: var(--clr-dark-200-);
+    padding: 1.2rem;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+}
+.contact-form button:hover {
+    color: var(--clr-dark-100-);
+    background-color: var(--clr-accent-);
+}
+
+@media (min-width: 768px) {
+    /* .contact-form input {
+        margin: 1rem 20%;
+    }*/
+
+    .contact-section {
+        margin: 1rem 27%;
+    }
+
+    .contact-form {
+        display: grid;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact-section {
+        margin: 1rem 25%;
+    }
+}
+
+/* ================Map forecast============== */
+#map-page h1{
+    color: var(--text-color);
+    text-align: center;
+    margin: 3rem;
+}
+
 /* ======================btn-search============== */
 
 input:focus {
@@ -233,8 +289,6 @@ input:focus {
 }
 
 .btn-search {
-
-
     font-weight: 0;
     font-size: 14px;
     color: var(--clr-light-1000);
