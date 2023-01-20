@@ -280,6 +280,7 @@ form,
     color: var(--text-color);
     text-align: center;
     margin: 3rem;
+    background-color: var(--clr-light-1000);
 }
 
 /* ======================btn-search============== */
@@ -351,7 +352,19 @@ input:focus {
         align-content: baseline;
         border-top: 5px solid var(--clr-dark-200-);
     }
-
+    #footer-for-about {
+        background: var(--clr-light-1000);
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        /* padding: 10px; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        flex-wrap: wrap-reverse;
+        align-content: baseline;
+        border-top: 5px solid var(--clr-dark-200-);
+    }
     /*  =============NAV BAR PC ======================== */
     .navbar{
         display: flex;
