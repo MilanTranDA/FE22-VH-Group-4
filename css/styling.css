@@ -284,7 +284,7 @@ input:focus {
 /* ================footer=================== */
 
 @media only screen and (min-width:768px) {
-    #footer-for-all {
+    .footer-for-all {
         background: var(--clr-light-1000);
         width: 100vw;
         position: fixed;
@@ -338,7 +338,15 @@ input:focus {
         display: none;
     }
 
-    .navbar-brand {}
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--button-color);
+    }
+    #weatherfeather{
+        padding-left: 5px;
+    }
 
     .navbar-button-container-mobile {}
 
@@ -350,6 +358,7 @@ input:focus {
         width: 35%;
         left: -50%;
         transition: 0.3s;
+        z-index: 999999;
     }
 
     .bar1,
@@ -361,9 +370,31 @@ input:focus {
         margin: 6px 0;
         transition: 0.4s;
     }
+    li{
+        font-family:sans-serif;
+        font-size: 20px;
+        padding: 10px;
+        background-color: var(--bg-secondary-color);
+        color: var(--button-text-color);
 
+    }
+    
+  
+    
+    
+    .nav-link {
+        text-decoration: none;
+        color: var(--button-color);
+        border-bottom: 0.5px solid var(--clr-accent-); /* or any desired value */
+    }
+    
+
+    #mobile-bottom-line{
+        border-bottom: 3px solid var(--clr-accent-);
+        text-decoration: none;
+    }
     /* Social media fixa darkmode / white mode ändra färger */
-    #footer-for-all {
+    .footer-for-all {
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -372,17 +403,30 @@ input:focus {
         padding: 10px;
         border-top: 5px solid var(--clr-dark-200-);
         overflow: auto;
+        z-index: 99999;
 
+
+    }
+    #footer-for-about{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: var(--clr-light-1000);
+        min-width: 100vw;
+        padding: 10px;
+        border-top: 5px solid var(--clr-dark-200-);
+        overflow: auto;
 
     }
 }
 
-#socials {
+.socials {
     filter: invert(38%) sepia(1%) saturate(3699%) hue-rotate(242deg) brightness(91%) contrast(96%);
 }
 
 #logo {
     filter: invert(82%) sepia(20%) saturate(1203%) hue-rotate(90deg) brightness(96%) contrast(90%);
+    
 }
 
 .navbar-nav {
