@@ -45,12 +45,14 @@ function showWeatherData(apiData) {
     error.innerText = '';
 
 
-    const smalleContainerShowingWeather = document.createElement('div');
-    mainContainerToshowWeather.appendChild(smalleContainerShowingWeather);
-    smalleContainerShowingWeather.classList.add("smallContainerForWeather")
+   
     
     // Lägg in dagen för de framtida dagarna
     for (i = 0; i < 5; i++) {
+        const smalleContainerShowingWeather = document.createElement('div');
+        mainContainerToshowWeather.appendChild(smalleContainerShowingWeather);
+        smalleContainerShowingWeather.classList.add("smallContainerForWeather")
+        
         const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         const date = new Date();
         // let findDay = ;
@@ -85,6 +87,9 @@ function showWeatherData(apiData) {
         smalleContainerShowingWeather.appendChild(tempertureContainer);
         tempertureContainer.appendChild(temperatureMax)
         tempertureContainer.appendChild(temperatureMin)
+
+        
+
     
         const WeatherIcon = apiData.list[i].weather[0].icon;
         const imageUrl = `http://openweathermap.org/img/wn/${WeatherIcon}@2x.png`
