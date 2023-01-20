@@ -5,7 +5,7 @@
     --clr-dark-200-: #625665;
     --clr-light-1000: #EEFFEE;
     --clr-light-800: #D6F0DD;
-    --clr-light-700: #D6EAD6;
+    --clr-light-700: #d6ead6;
     --clr-accent-: #4EE99E;
     --clr-weather-blue: #35ABED;
 
@@ -353,15 +353,58 @@ input:focus {
     }
 
     /*  =============NAV BAR PC ======================== */
-    .navbar {
-        /* display: block;
-        border-bottom: 5px solid var(--text-secondary-color);
-        background: var(--bg-color); */
+    .navbar{
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        align-items: center;
         background: var(--clr-light-1000);
         border-bottom: 5px solid var(--text-secondary-color);
+    }
+    .container-navbarpc{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--button-color);
+    }
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 5px;
+        /* background-color:var(--bg-secondary-color) ; */
+    }
+    .weatherfeather{
+        padding-left: 5px;
+    }
+    .navbar-button-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: auto; /* this will push it to the right side */
+    }
+    .nav-link{
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        padding: 5px;
+        color: var(--button-color);
+        font-family:sans-serif;
+        font-weight: bolder;
+        box-shadow: inset 0 0 0 0 var(--bg-secondary-color);
+        margin: 5px;
+        border-bottom: 2px solid transparent;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    }
+    .nav-link:hover{
+        box-shadow: inset 100px 0 0 0 var(--bg-secondary-color);
+        border-bottom: 2px solid var(--clr-accent-);
+    }
+    #logo{
+        padding-left: 10px;
     }
 
     .mobil-navbar {
@@ -398,7 +441,7 @@ input:focus {
         text-decoration: none;
         color: var(--button-color);
     }
-    #weatherfeather{
+    .weatherfeather{
         padding-left: 5px;
     }
 
@@ -433,15 +476,6 @@ input:focus {
 
     }
     
-  
-    
-    
-    .nav-link {
-        text-decoration: none;
-        color: var(--button-color);
-        border-bottom: 0.5px solid var(--clr-accent-); /* or any desired value */
-    }
-    
 
     #mobile-bottom-line{
         border-bottom: 3px solid var(--clr-accent-);
@@ -472,8 +506,13 @@ input:focus {
         overflow: auto;
 
     }
+    
+    .nav-link {
+        text-decoration: none;
+        color: var(--text-color);
+        border-bottom: 0.5px solid var(--clr-accent-); /* or any desired value */
+    }
 }
-
 .socials {
     filter: invert(38%) sepia(1%) saturate(3699%) hue-rotate(242deg) brightness(91%) contrast(96%);
 }
@@ -481,13 +520,6 @@ input:focus {
 #logo {
     filter: invert(82%) sepia(20%) saturate(1203%) hue-rotate(90deg) brightness(96%) contrast(90%);
     
-}
-
-.navbar-nav {
-    fill: var(--clr-dark-100-);
-    filter: invert(36%) sepia(6%) saturate(1020%) hue-rotate(242deg) brightness(93%) contrast(91%);
-    /* filter ändras färg till vit behåll till darkmode */
-    /* filter: invert(100%);  */
 }
 
 #copyright {
