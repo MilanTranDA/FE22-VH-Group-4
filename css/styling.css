@@ -75,9 +75,12 @@ form,
     padding: 10px;
 
 }
-
+h1{
+    padding-bottom: 20px;
+}
 .hero-text{
     color: var(--clr-light-1000);
+   
 }
 
 /* =========weather container======= */
@@ -109,7 +112,7 @@ form,
     content: " °C";
     font-size: 15px;
     position: relative;
-    top: -10px;
+    top: -10px;     
 
 }
 
@@ -287,6 +290,7 @@ form,
     text-align: center;
     margin: 3rem;
     background-color: var(--bg-color);
+    
 }
 
 /* ======================btn-search============== */
@@ -343,7 +347,88 @@ input:focus {
 
 
 /* ================footer=================== */
+@media only screen and (max-width:768px) {
 
+    /* =============CSS MOBILE VERSION==================== */
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .mobil-navbar {
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        border-bottom: 5px solid var(--text-secondary-color);
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .weatherfeather{
+        padding-left: 5px;
+        color: var(--text-color);
+    }
+
+    .navbar-button-container-mobile {}
+
+
+    .sidebar {
+        position: fixed;
+        background: var(--bg-color);
+        height: 100%;
+        width: 35%;
+        left: -50%;
+        transition: 0.3s;
+        z-index: 999999;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 30px;
+        height: 5px;
+        background-color: var(--clr-dark-200-);
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    li{
+        font-family:sans-serif;
+        font-size: 20px;
+        padding: 10px;
+        background-color: var(--bg-secondary-color);
+        color: var(--button-text-color);
+
+    }
+    
+
+    #mobile-bottom-line{
+        border-bottom: 3px solid var(--clr-accent-);
+        text-decoration: none;
+        color: var(--button-text-color);
+    }
+    
+    
+    .nav-link {
+        text-decoration: none;
+        color: var(--text-color);
+        border-bottom: 0.5px solid var(--clr-accent-); /* or any desired value */
+    }
+    .Container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
 @media only screen and (min-width:768px) {
     .footer-for-all {
         background: var(--clr-light-1000);
@@ -436,89 +521,15 @@ input:focus {
 
     .parentContainer {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);   
     }
-
-}
-
-
-@media only screen and (max-width:768px) {
-
-    /* =============CSS MOBILE VERSION==================== */
-    .logo-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-
-    .mobil-navbar {
-        display: flex;
-        flex-direction: column;
-        background: var(--bg-color);
-        border-bottom: 5px solid var(--text-secondary-color);
-    }
-
-    .navbar-nav {
-        display: none;
-    }
-
-    .navbar-brand {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-    }
-
-    .weatherfeather{
-        padding-left: 5px;
-        color: var(--text-color);
-    }
-
-    .navbar-button-container-mobile {}
-
-
-    .sidebar {
-        position: fixed;
-        background: var(--bg-color);
-        height: 100%;
-        width: 35%;
-        left: -50%;
-        transition: 0.3s;
-        z-index: 999999;
-    }
-
-    .bar1,
-    .bar2,
-    .bar3 {
-        width: 30px;
-        height: 5px;
-        background-color: var(--clr-dark-200-);
-        margin: 6px 0;
-        transition: 0.4s;
-    }
-    li{
-        font-family:sans-serif;
-        font-size: 20px;
-        padding: 10px;
-        background-color: var(--bg-secondary-color);
-        color: var(--button-text-color);
-
-    }
-    
-
-    #mobile-bottom-line{
-        border-bottom: 3px solid var(--clr-accent-);
-        text-decoration: none;
-        color: var(--button-text-color);
-    }
-    
-    
-    .nav-link {
-        text-decoration: none;
-        color: var(--text-color);
-        border-bottom: 0.5px solid var(--clr-accent-); /* or any desired value */
+    .smallContainerForWeather{
+        padding: 30px;
     }
 }
+
+
+
 /* Social media fixa darkmode / white mode ändra färger */
 .footer-for-all {
     position: absolute;
@@ -559,3 +570,7 @@ input:focus {
     margin-top: 30px;
     /* filter: invert(38%) sepia(1%) saturate(3699%) hue-rotate(242deg) brightness(91%) contrast(96%); */
 }
+
+
+
+
