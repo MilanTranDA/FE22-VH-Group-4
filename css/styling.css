@@ -279,7 +279,7 @@ form,
 
 /* ================Map forecast============== */
 #map-page h1{
-    color: var(--text-color);
+    color: var(--clr-dark-200-);
     text-align: center;
     margin: 3rem;
     background-color: var(--bg-color);
@@ -411,13 +411,13 @@ input:focus {
         color: var(--text-color);
         font-family:sans-serif;
         font-weight: bolder;
-        box-shadow: inset 0 0 0 0 var(--bg-secondary-color);
+        box-shadow: inset 0 0 0 0 var(--clr-light-700);
         margin: 5px;
         border-bottom: 2px solid transparent;
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     }
     .nav-link:hover{
-        box-shadow: inset 100px 0 0 0 var(--bg-secondary-color);
+        box-shadow: inset 100px 0 0 0 var(--clr-light-700);
         border-bottom: 2px solid var(--clr-accent-);
         background-color: var(--bg-secondary-color);
     }
@@ -500,6 +500,7 @@ input:focus {
     #mobile-bottom-line{
         border-bottom: 3px solid var(--clr-accent-);
         text-decoration: none;
+        color: var(--button-text-color);
     }
     /* Social media fixa darkmode / white mode ändra färger */
     .footer-for-all {
