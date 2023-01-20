@@ -506,32 +506,7 @@ input:focus {
         text-decoration: none;
         color: var(--button-text-color);
     }
-    /* Social media fixa darkmode / white mode ändra färger */
-    .footer-for-all {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        background: var(--bg-color);
-        color: var(--text-color);
-        min-width: 100vw;
-        padding: 10px;
-        border-top: 5px solid var(--clr-accent-);
-        overflow: auto;
-        z-index: 99999;
-
-
-    }
-    #footer-for-about{
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background: var(--bg-color);
-        min-width: 100vw;
-        padding: 10px;
-        border-top: 5px solid var(--clr-accent-);
-        overflow: auto;
-
-    }
+    
     
     .nav-link {
         text-decoration: none;
@@ -539,6 +514,33 @@ input:focus {
         border-bottom: 0.5px solid var(--clr-accent-); /* or any desired value */
     }
 }
+/* Social media fixa darkmode / white mode ändra färger */
+.footer-for-all {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: var(--bg-color);
+    color: var(--text-color);
+    min-width: 100vw;
+    padding: 10px;
+    border-top: 5px solid var(--clr-accent-);
+    overflow: auto;
+    z-index: 99999;
+
+
+}
+#footer-for-about{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: var(--bg-color);
+    min-width: 100vw;
+    padding: 10px;
+    border-top: 5px solid var(--clr-accent-);
+    overflow: auto;
+
+}
+
 .socials a{
     filter: invert(38%) sepia(1%) saturate(3699%) hue-rotate(242deg) brightness(91%) contrast(96%);
 }
